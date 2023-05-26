@@ -28,7 +28,7 @@
 .cards{
     display: flex; /*faz com que a coluna vire linha*/
      align-items: center; /*alinhar na vertical*/
-    gap: 32px;
+    /* gap: 32px; */
     }
     
 
@@ -40,7 +40,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin: auto -35px;
+
 
 }
 
@@ -69,9 +70,60 @@
     height: 608px;
     border-radius: 20px;
     box-shadow:0px 294px 118px rgba(0, 0, 0, 0.03), 0px 165px 99px rgba(0, 0, 0, 0.1), 0px 73px 73px rgba(0, 0, 0, 0.17), 
-    0px 18px 40px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2); ;
+    0px 18px 40px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2); 
+    position: relative;
 }
-.card-front header{
+.cardinfo{
+    padding: 48px 133px 60px 40px;
+}
+.cardinfo header{
     width: 263px;
     height: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 263px;
 }
+.cardinfo h2{
+    font-size: 24px;
+    color: #ECE4EF;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    line-height: 40px;
+    font-weight: 700;
+
+}
+aside{
+    flex-direction: column;
+    display: flex;
+    width: 198px;
+    margin-top: 60px;
+    gap: 16px;
+}
+
+.cardinfo span{
+    line-height: 18px;
+    color: var(--description-info);
+    font-size: 14px;
+    font-weight: 400px;
+    /* margin-bottom: 60px; */
+   
+}
+
+.cardinfo h4{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--description);
+    line-height: 18px;
+    /* margin-bottom: 16px; */
+}
+
+
+.character img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
+

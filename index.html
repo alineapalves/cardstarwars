@@ -5,45 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="atroposjs/atropos.min.css">
+    <script src="./atroposjs/atropos.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <main class="container">
+    <main class=" atropos container">
         <div class="cards">
             <div class="card-back">
                 <h1>FINN</h1>
             </div>
             <div class="card-front">
-                <div class="cardinfo"> 
-                <header>
-                    <h2>Rey Skywalker</h2>
-                    <span>Era uma catadora de sucata que descobriu ser sensível à 
-                        Força durante sua busca ao lendário Mestre Jedi Luke Skywalker.
-                    </span>
-                </header>
-                <div class="character"><img src="./assets/cardfront/Character.svg" alt="imagem rey skywalker"></div>
-                <aside>
-                    <div class="infos">
-                        <span>filmes</span>
-                        <h4>The Force Awakens, The Last Jedi, The Rise of Skywalker & Forces of Destiny</h4>
+                <div class="atropos-scale"> 
+                    <div class="atropos-rotate">
+                        <div class="atropos-inner">
+                            <div class="cardinfo"> 
+                            <header>
+                                <h2 data-atropos-offset="5">Rey Skywalker</h2>
+                                <span>Era uma catadora de sucata que descobriu ser sensível à 
+                                    Força durante sua busca ao lendário Mestre Jedi Luke Skywalker.
+                                </span>
+                            </header>
+                            <div class="character"><img src="./assets/cardfront/Character.svg" alt="imagem rey skywalker" data-atropos-offset="4"></div>
+                            <aside>
+                                <div class="infos">
+                                    <span>filmes</span>
+                                    <h4>The Force Awakens, The Last Jedi, The Rise of Skywalker & Forces of Destiny</h4>
+                                </div>
+                                <div class="infos">
+                                    <span>Espécie</span>
+                                    <h4>Humana</h4>
+                                </div>
+                                <div class="infos">
+                                    <span>Altura</span>
+                                    <h4>1,7m</h4>
+                                </div>
+                                <div class="infos">
+                                    <span>Localidade</span>
+                                    <h4>Jakku</h4>
+                                </div>
+                                <div class="infos">
+                                    <span>Armas</span>
+                                    <h4>Sabre de luz, Blaster, Quarterstaff</h4>
+                                </div>
+                            </aside>
+                            </div>
+                        </div>
                     </div>
-                    <div class="infos">
-                        <span>Espécie</span>
-                        <h4>Humana</h4>
-                    </div>
-                    <div class="infos">
-                        <span>Altura</span>
-                        <h4>1,7m</h4>
-                    </div>
-                    <div class="infos">
-                        <span>Localidade</span>
-                        <h4>Jakku</h4>
-                    </div>
-                    <div class="infos">
-                        <span>Armas</span>
-                        <h4>Sabre de luz, Blaster, Quarterstaff</h4>
-                    </div>
-                </aside>
                 </div>
             </div>
             <div class="card-back">
@@ -51,5 +59,10 @@
             </div>
         </div>
     </main>
+    <Script>
+        new Atropos({
+            el: ".atropos",
+        })
+    </Script>
 </body>
 </html>
